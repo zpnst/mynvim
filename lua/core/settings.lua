@@ -14,4 +14,4 @@ opt.visualbell = true
 opt.scrolloff = 5
 opt.termguicolors = true
 
-cmd("colorscheme jellybeans")
+cmd("colorscheme iceberg")

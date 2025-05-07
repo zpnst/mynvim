@@ -6,3 +6,4 @@ require('core.plugins')
 require('core.settings')
 
 require('plugins.telescope')
+require('plugins.neotree')

@@ -27,7 +27,6 @@ require("packer").startup(function(use)
 
 	use "tpope/vim-surround"
 	use "tpope/vim-commentary"
-	use "preservim/nerdtree"
 	use "vim-airline/vim-airline"
 	use "ap/vim-css-color"
 	use "rafi/awesome-vim-colorschemes"
@@ -44,6 +43,17 @@ require("packer").startup(function(use)
 		tag = '0.1.8',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
+
+	use {
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v3.x",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"nvim-tree/nvim-web-devicons", 
+			"MunifTanjim/nui.nvim",
+		}
+	}
+	
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
